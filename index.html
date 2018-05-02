@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Datos del alumno</title>
+ 
+ <!--grupo css-->
+ <link rel="stylesheet" href="css/temaapp1.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ 
+ <!--grupo javaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--<script src="js.acciones.js"></script> -->
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ </head>
+ 
+ <body onLoad="MM_preloadImages('imagenes/naturaleza_destruida.jpg','imagenes/sin_basura.jpg')">
+ 
+   <div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Contaminación ambiental</h1>
+    </div>
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Destrucción</h1>
+      <div>
+      <!--COLOCAR ALGÚN COMENTARIO-->
+      <br>
+      </div>
+     <div>
+      <!--COLOCAR IMAGEN DE SUSTITUCIÓN-->
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','imagenes/naturaleza_destruida.jpg',1)"><img src="imagenes/naturaleza.jpg" width="85%" height="50%" id="Image46"></a> </div>
+    </div>
+   </div>
+  <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Definición</h2>
+         <p>¿Qué es la contaminación?</p>
+       </a>
+    </li>
+      <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Tipos de contaminación</h2>
+            <p>Se muestra los tipos de contaminación que existen</p>
+          </a>
+       </li>
+      <li class="ui-first-child ui-last-child">
+          <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Consecuencias</h2>
+            <p>Demostración de las consecuencias con enfoque al calentamiento global</p>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+            <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Reciclaje</h2>
+              <p>¿Qué es y como se clasifica el reciclaje?</p>
+             </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+            <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Medidas para combatirla</h2>
+               <p>5 medidas para combatir la contaminación en mi comunidad</p> 
+            </a>
+        </li>
+       </ul>
+      </div>
+    <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+        <div>
+          <img src="imagenes/mdpi.png" width="46" height="46">
+        </div>
+        <div>
+          <h4>Aplicacion cuatro</h4>
+          <h4>Pedro Jesús Mendoza Zárate</h4>
+        </div>
+       </div>
+      </div>
+      <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+            <h1>¿Qué es la contaminación?</h1>
+        </div>
+        <div data-role="content" align="center">
+            <div>
+              <h2>Contaminación</h2>
+<p>
+La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).
+</p>
+<img src="imagenes/contaminacion_nuclear.jpg" width="85%" height="50%">
+<p>
+Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.
+</p>
+<img src="imagenes/contaminacion_ambiental.jpg" width="85%" height="50%">
+<p>
+La contaminación puede clasificarse según el tipo de fuente de donde proviene, o por la forma de contaminante que emite o medio que contamina. Existen muchos agentes contaminantes entre ellos las sustancias químicas (como plaguicidas, cianuro, herbicidas y otros.), los residuos urbanos, el petróleo, o las radiaciones ionizantes. Todos estos pueden producir enfermedades, daños en los ecosistemas o el medioambiente. Además existen muchos contaminantes gaseosos que juegan un papel importante en diferentes fenómenos atmosféricos, como la generación de lluvia ácida, el debilitamiento de la capa de ozono, y el cambio climático.
+</p>
+<img src="imagenes/contaminacion_aire.jpg" width="85%" height="50%">
+        </div>
+        </div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+            <div>
+              <img src="imagenes/mdpi.png" width="46" height="46">
+            </div>
+               <h4>Aplicacion cuatro, MZPJ</h4>
+        </div>
+        </div>
+                      
+                      
+         <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+            <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">  
+               <h3>Tipos de contaminación</h3>
+        </div>
+        <div data-role="content" align="center">
+           <div>
+            <h2> Contaminación atmosférica</h2>
+<p>
+Consiste en la liberación de sustancias químicas y partículas en la atmósfera alterando su composición y suponiendo un riesgo para la salud de las personas y de los demás seres vivos. Los gases contaminantes del aire más comunes son el monóxido de carbono, el dióxido de azufre, los clorofluorocarbonos y los óxidos de nitrógeno producidos por la industria y por los gases producidos en la combustión de los vehículos.
+</p>
+<img src="imagenes/contaminacion_atmosferica.png" width="85%" height="60%">
+<p>
+Los fotoquímicos como el ozono y el esmog se aumentan en el aire por los óxidos del nitrógeno e hidrocarburos y reaccionan a la luz solar. El material particulado o el polvo contaminante en el aire se mide por su tamaño en micrómetros, y es común en erupciones volcánicas. La contaminación atmosférica puede tener un carácter local, cuando los efectos ligados al foco de emisión afectan solo a las inmediaciones del mismo, o un carácter global, cuando las características del contaminante afectan al equilibrio del planeta y zonas muy distantes a los focos emisores, ejemplos de esto son la lluvia ácida y el calentamiento global.
+</p>
+<img src="imagenes/calentamiento_global.jpg" width="85%" height="60%">
+
+<h2>Contaminación hídrica</h2>
+<p>
+Se da por la liberación de residuos y contaminantes que drenan a las escorrentías y luego son transportados hacia ríos, penetrando en aguas subterráneas o descargando en lagos o mares. Por derrames o descargas de aguas residuales, eutrofización o descarga de basura.
+</p>
+<img src="imagenes/contaminacion_hidrica.jpg" width="85%" height="50%">
+<p>
+O por liberación descontrolada del gas de invernadero CO2 que produce la acidificación de los océanos. Los desechos marinos son desechos mayormente plásticos que contaminan los océanos y costas, algunas veces se acumulan en alta mar como en la gran mancha de basura del Pacífico Norte. Los derrames de petróleo en mar abierto por el hundimiento o fugas en petroleros y algunas veces derrames desde el mismo pozo petrolero.
+</p>
+<img src="imagenes/contaminacion_hidrica1.png" width="85%" height="50%">
+
+<h2>Contaminación del suelo</h2>
+<p>
+Ocurre cuando productos químicos son liberados por un derrame o filtraciones sobre y bajo la tierra. Entre los contaminantes del suelo más significativos se encuentran los hidrocarburos como el petróleo y sus derivados, los metales pesados frecuentes en baterías, el Metil tert-butil éter (MTBE),14​ los herbicidas y plaguicidas generalmente rociados a los cultivos industriales y monocultivos y organoclorados producidos por la industria. 
+</p>
+<img src="imagenes/contaminacion_suelo.jpg" width="85%" height="50%">
+<p>
+También los vertederos y cinturones ecológicos que entierran grandes cantidades de basura de las ciudades. Esta contaminación puede afectar a la salud de forma directa y al entrar en contacto con fuentes de agua potable.
+</p>
+<img src="imagenes/contaminacion_suelo1.jpg" width="85%" height="50%">
+
+<h2>Contaminación visual</h2>
+
+<p>
+Que puede referirse a la presencia de torres para el transporte de energía eléctrica, Vallas publicitarias en carreteras y avenidas, accidentes geográficos como las "cicatrices" producidas por la minería a cielo abierto, también por los vertederos a cielo abierto.
+</p>
+<img src="imagenes/contaminacion_visual.jpg" width="85%" height="50%">
+
+<h2>Contaminación acústica</h2>
+<p>
+Que comprende el ruido de avenidas producidos por automotores, ruido de aviones, ruido industrial o ruidos de alta intensidad. Pueden reducir la capacidad auditiva del hombre y producir estrés.
+</p>
+<img src="imagenes/contaminacion_acustica.jpg" width="85%" height="50%">
+
+<h2>Contaminación lumínica</h2>
+<p>
+Incluye la sobre iluminación e interferencia astronómica (que disminuye y distorsiona el brillo de las estrellas o cualquier objeto estelar afectando el trabajo de observatorios y astrónomos), esta contaminación se da durante la noche en cercanías de las ciudades, por esto los observatorios astronómicos importantes se asientan en regiones alejadas de las urbes.
+</p>
+<img src="imagenes/contaminacion_luminica.jpg" width="85%" height="50%">
+             </div>
+           </div>
+         <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+            <div>
+              <img src="imagenes/mdpi.png"width="46" height="46">
+            </div>
+             <h4>Aplicacion cuatro, MZPJ</h4>
+            </div>
+           </div>
+                                   
+                                   
+          <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                <h1>Consecuencias de la contaminación</h1>
+                </div>
+               <div data-role="content" align="center">
+                  <div>
+                    <h2>Consecuencias</h2>
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+     <h1>Consecuencias muy malas para el futuro</h1>
+      <div>
+      <!--COLOCAR ALGÚN COMENTARIO-->
+      <br>
+      </div>
+     <div>
+       <!--COLOCAR VISOR DE FUTURAS CONSECUENCIAS-->
+       <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/contaminacion_hidrica1.png" alt="contaminacion_hidrica1" title="contaminacion_hidrica1" id="wows1_0"/></li>
+		<li><img src="data1/images/contaminacion_suelo.jpg" alt="contaminacion_suelo" title="contaminacion_suelo" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminacion_suelo1.jpg" alt="contaminacion_suelo1" title="contaminacion_suelo1" id="wows1_2"/></li>
+		<li><img src="data1/images/dao_aire.jpg" alt="daño_aire" title="daño_aire" id="wows1_3"/></li>
+		<li><img src="data1/images/dao_animales.jpg" alt="daño_animales" title="daño_animales" id="wows1_4"/></li>
+		<li><img src="data1/images/dao_ozono.jpg" alt="daño_ozono" title="daño_ozono" id="wows1_5"/></li>
+		<li><img src="data1/images/dao_suelo.jpg" alt="daño_suelo" title="daño_suelo" id="wows1_6"/></li>
+		<li><img src="data1/images/calentamiento_global.jpg" alt="calentamiento_global" title="calentamiento_global" id="wows1_7"/></li>
+		<li><img src="data1/images/consecuencia_salud.jpg" alt="consecuencia_salud" title="consecuencia_salud" id="wows1_8"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/contaminacion_ambiental.jpg" alt="http://wowslider.com/" title="contaminacion_ambiental" id="wows1_9"/></a></li>
+		<li><img src="data1/images/contaminacion_atmosferica.png" alt="contaminacion_atmosferica" title="contaminacion_atmosferica" id="wows1_10"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="contaminacion_hidrica1"><span><img src="data1/tooltips/contaminacion_hidrica1.png" alt="contaminacion_hidrica1"/>1</span></a>
+		<a href="#" title="contaminacion_suelo"><span><img src="data1/tooltips/contaminacion_suelo.jpg" alt="contaminacion_suelo"/>2</span></a>
+		<a href="#" title="contaminacion_suelo1"><span><img src="data1/tooltips/contaminacion_suelo1.jpg" alt="contaminacion_suelo1"/>3</span></a>
+		<a href="#" title="daño_aire"><span><img src="data1/tooltips/dao_aire.jpg" alt="daño_aire"/>4</span></a>
+		<a href="#" title="daño_animales"><span><img src="data1/tooltips/dao_animales.jpg" alt="daño_animales"/>5</span></a>
+		<a href="#" title="daño_ozono"><span><img src="data1/tooltips/dao_ozono.jpg" alt="daño_ozono"/>6</span></a>
+		<a href="#" title="daño_suelo"><span><img src="data1/tooltips/dao_suelo.jpg" alt="daño_suelo"/>7</span></a>
+		<a href="#" title="calentamiento_global"><span><img src="data1/tooltips/calentamiento_global.jpg" alt="calentamiento_global"/>8</span></a>
+		<a href="#" title="consecuencia_salud"><span><img src="data1/tooltips/consecuencia_salud.jpg" alt="consecuencia_salud"/>9</span></a>
+		<a href="#" title="contaminacion_ambiental"><span><img src="data1/tooltips/contaminacion_ambiental.jpg" alt="contaminacion_ambiental"/>10</span></a>
+		<a href="#" title="contaminacion_atmosferica"><span><img src="data1/tooltips/contaminacion_atmosferica.png" alt="contaminacion_atmosferica"/>11</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+     </div>
+    </div>
+    </div>
+<h2>Problemas para la salud</h2>
+<p>
+la contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto entraña para nuestra salud y vida.
+</p>
+<img src="imagenes/consecuencia_salud.jpg" width="85%" height="50%">
+<h2>Debilitamiento de la capa de ozono</h2>
+<p>
+La capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa.la consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayortemperatura en el planeta. Esto no solo hace que cada vez haya más zonas desiertas en las que es imposible vivir, sino que también hace que el hielo en los polos se deshaga y mueran muchas especies por ello. No hace falta mencionar que esto hace subir indudablemente el nivel del mar y que, de seguir así, muchas ciudades costeras se veránarrasadas, quedándose sin playas y sin zona costera.
+</p>
+<img src="imagenes/daño_ozono.jpg" width="85%" height="50%">
+<h2>La contaminación afecta al suelo y al agua</h2>
+<p>
+La contaminación al medio ambiente afecta al agua y al suelo, lo que hace que cada vez haya más especies en peligro de extinción. El agua no es potable en una gran cantidad de sitios y el suelo para la siembre no tiene los nutrientes necesarios, lo que hace que cada vez se pueda cultivar menos y que el número de cosechas para nuestro sustento sea cada vez menor.
+</p>
+<img src="imagenes/daño_suelo.jpeg" width="85%" height="50%">
+<h2>La contaminación afecta al clima</h2>
+<p>
+Seguro que ya te has dado cuenta que los inviernos pueden ser mucho más fríos o que los veranos son mucho más calurosos, a la vez que seguro te has dado cuenta que las estaciones como la Primavera Verano y el verano pueden ser más largas y que las de temperaturas medias, son cada vez más cortas. Todos estos cambios y los fenómenos que no se habían visto desde  hace mucho tiempo o incluso nunca se habían visto son causados por la contaminación.
+</p>
+<img src="imagenes/daño_aire.jpeg" width="85%" height="50%">
+<h2>La contaminación afecta a los animales</h2>
+<p>
+La contaminación química también daña a los animales del mar, esto se debe a los restos de metales y sustancia que hay como el mercurio, cadmio, cobre y plomo. Y la contaminación acústica en los océanos ha afectado también a la salud de especies submarinas como ballenas, delfina y otros animales.
+</p>
+<img src="imagenes/daño_animales.jpg" width="85%" height="50%">
+                    </div>
+               </div>
+                <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+                 <div>
+                  <img src="imagenes/mdpi.png" width="46" height="46">
+                </div>
+                   <h4>Aplicacion cuatro, MZPJ</h4>
+                </div>
+               </div>
+                                   
+                                   
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Reciclaje</h1>  
+      </div>
+      <div data-role="content" align="center">
+        <div>
+          <h2>¿Qué es el reciclaje?</h2>
+          <h2>EL RECICLAJE</h2>
+          <img src="imagenes/reciclar.png" width="40%" height="40%">
+    <p>
+    <h4>El reciclaje consiste en obtener una nueva materia prima o producto, mediante un proceso fisicoquímico o mecánico, a partir de productos y materiales ya en desuso o utilizados. De esta forma, conseguimos alargar el ciclo de vida de un producto, ahorrando materiales y beneficiando al medio ambiente al generar menos residuos.El reciclaje surje no sólo para eliminar residuos, sino para hacer frente al agotamiento de los recursos naturales del planeta.</h4>
+<h2>El proceso del reciclaje</h2>
+<h4>Todo este proceso del reciclaje, pasa por varias fases:</h4>
+<h4>El reciclaje comienza en entornos industriales y domésticos, mediante la separación de los materiales. El siguiente paso consiste en la recuperación de estos materiales por las empresas públicas y privadas y su posterior traslado a las plantas de transferencia.</h4>
+<h2>Todo este proceso del reciclaje, pasa por varias fases:</h2>
+<h4>El reciclaje comienza en entornos industriales y domésticos, mediante la separación de los materiales. El siguiente paso consiste en la recuperación de estos materiales por las empresas públicas y privadas y su posterior traslado a las plantas de transferencia.</h4>
+<h4>En estas plantas, se almacenan y compactan grandes cantidades de residuos, para su posterior transporte en grandes cantidades hacia las plantas de reciclaje, llamadas plantas clasificadoras. Es aquí cuando se hace una separación exhaustiva de los residuos. En estas plantas, encontramos en algunos casos, las plantas de valoración, o reciclador final, donde se obtienen nuevas materias o productos, se almacenan los materiales en grandes vertederos, o bien se produce energía como es el caso de las plantas de biogas.</h4>
+<h2>Estrategia de tratamiento de residuos</h2>
+<h4>El reciclaje, al margen de su complejo proceso de transformación, es uno de los puntos básicos de estrategia de tratamiento de residuos 3R.</h4>
+<h2>Reducir</h2>
+<h4>Acciones para reducir la producción de objetos susceptibles de convertirse en residuos.</h4>
+<h2>Reutilizar</h2>
+<h4>Acciones que permiten el volver a usar un producto para darle una segunda vida, con el mismo uso u otro diferente.</h4>
+<h2>Reciclar</h2>
+<h4>El conjunto de operaciones de recogida y tratamiento de residuos que permiten reintroducirlos en un ciclo de vida.</h4>
+<img src="imagenes/reciclaje.jpg" width="85%" height="50%">
+         
+         </div>
+        </div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+          <div>
+            <img src="imagenes/mdpi.png" width="46" height="46">
+          </div>
+             <h4>Aplicacion cuatro, MZPJ</h4>
+          </div>
+          </div>
+          
+          
+                                         
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+              <h1>Medidas para combatirla en mi comunidad</h1>
+            </div>
+            <div data-role="content" align="center">
+            	<div>
+            		<h2>5 medidas para combatir la contaminación  mi comunidad</h2>
+                    
+                    <h2>Reciclar plásticos</h2>
+                    
+                    <p>Podemos ayudar al medio ambiente reciclando plásticos,
+                    por ejemplo las botellas que diariamente se tiran al piso
+                    al igual que toda la basura que contamina diariamente. Con lo
+                    único que no podriamos reciclar solo queda no tirarlo en 
+                    indevidos.</p>
+                    <img src="imagenes/reciclaje_plastico.jpg" width="85%" height="50%">
+                    <h2>No hacer montoneras de basura</h2>
+                    
+                    <p>Generalmente en las colonias un poco
+                    lejanas al centro de la ciudad acostrumbra
+                    a hacer pequeños montones de basura en las esquinas
+                    de las calles con el pretexto de que la el camión 
+                    de basura pasará pronto, entonces un buen remedio
+                    para evitar este tipo de contaminación es bueno no
+                    hacer montones de basura en la calle.
+                    <!--USAR IMAGENES DE SUSTITUCIÓN PARA CADA UNO O SOLO UNO-->
+                    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image50','','imagenes/sin_basura.jpg',1)"><img src="imagenes/basura_calle.jpg" width="640" height="360" id="Image50"></a>
+                    <h2>No usar cosméticos con químicos</h2>
+                    
+                    <p>Las mujeres por lo general acostumbran a usar
+                    algún tipo de spray que contiene un químico que 
+                    dañan a la atmosfera y la capa de ozono, en este 
+                    caso es más fácil de llevar acabo porque no es 
+                    algo necesario o indispensable para las personas,
+                    por lo cual podrian optar por usar otros tipos de
+                    cosmeticos y aparatos de belleza.
+                    <br>
+                      <img src="imagenes/cosmeticos.jpg" width="85%" height="50%">
+                    <h2>No consumir elementos dañinos para la salud y el ambiente</h2>
+                    
+                    <p>Algunos productos son dañinos para nosotros como para el medio
+                    ambiente, por ejemplo el cigarro es muy dañino para la salud e igual
+                    es muy dañino para el medio ambiente, el cigarro saca un químico llamado
+                    CO2 o bioxido de carbono, el cual debilta la atmosfera y la capa de ozono
+                    </p>
+                   <img src="imagenes/refrescos.jpg" width="85%" height="50%">
+
+                    <h2>No utilizar tanto el transporte motorizado</h2>
+                    
+                    <p>Para tener un mejor desplazamiento la mayor parte de las
+                    personas acostumbra a tomar algún tipo de transporte con 
+                    motor, al usar los carros se contamina de diversas formas, la
+                    primera es la del humo que como ya sabemos despide un químico 
+                    que debilita la atmosfera, además de que el sistema de refrigeración
+                    de los refrigeradores de carne y carros antiguos de la década de los 
+                    90´s hacia atrás ocupan un químico que es altamente dañino para la
+                    capa de ozono, lo mejor es no frecuentar los carros antiguos y actuales 
+                    por igual y optar por utilizar otros medios de transporte como la bicicleta, la patineta, patines, etc.
+                    <img src="imagenes/carros_contaminando.png" width="85%" height="50%">
+                    
+                    <h2>¿QUIERES SABER MÁS MEDIDAS PARA COMBATIR LA CONTAMINACIÓN?</h2>
+                    
+<a href="https://www.ecologiaverde.com/como-puedo-ayudar-al-medio-ambiente-262.html" target="_self">CLICK AQUÍ</a>
+                    </div>
+                </div>
+            <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+            <div>
+            	<img src="imagenes/mdpi.png" width="46" height="46">
+            </div>
+              <h4>Aplicación cuatro, MZPJ</h4>
+            </div>
+           </div>
+         </body>
+        </html>
+ 
+      
+                                                
+  
+                
+        
+
+
